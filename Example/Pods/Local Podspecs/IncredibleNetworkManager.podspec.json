@@ -1,0 +1,22 @@
+{
+  "name": "IncredibleNetworkManager",
+  "version": "0.1.0",
+  "summary": "A short description of IncredibleNetworkManager.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Fabio Gustavo Hoffmann/IncredibleNetworkManager",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Fabio Gustavo Hoffmann": "fabio@dogtownmedia.com"
+  },
+  "source": {
+    "git": "https://github.com/Fabio Gustavo Hoffmann/IncredibleNetworkManager.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "IncredibleNetworkManager/Classes/**/*"
+}

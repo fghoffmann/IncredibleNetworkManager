@@ -8,11 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		2B28EA0CD54963E55A8E3DC5 /* Pods_IncredibleNetworkManager_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD8E827B0709B0F33E1A3375 /* Pods_IncredibleNetworkManager_Example.framework */; };
+		2B3E91BC2067EFBA005FAC61 /* PictureModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3E91BB2067EFBA005FAC61 /* PictureModel.swift */; };
+		2B3E91C82067F0B3005FAC61 /* ImageListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3E91C72067F0B3005FAC61 /* ImageListViewController.swift */; };
+		2B3E91CA2067F0BB005FAC61 /* ImageListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3E91C92067F0BB005FAC61 /* ImageListViewModel.swift */; };
+		2B3E91CE2067F0DF005FAC61 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B3E91CC2067F0DF005FAC61 /* LaunchScreen.xib */; };
+		2B3E91D12067F0E6005FAC61 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B3E91CF2067F0E6005FAC61 /* Main.storyboard */; };
+		2B3E91D320680832005FAC61 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2B3E91D220680832005FAC61 /* Info.plist */; };
+		2B3E91D520680CC0005FAC61 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3E91D420680CC0005FAC61 /* BaseModel.swift */; };
+		2B3E91D7206813C8005FAC61 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3E91D6206813C8005FAC61 /* UserModel.swift */; };
+		2B3E91D92068143D005FAC61 /* CollectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3E91D82068143D005FAC61 /* CollectionModel.swift */; };
+		2B3E91DC206814AB005FAC61 /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3E91DB206814AB005FAC61 /* BaseService.swift */; };
+		2B3E91DE20681624005FAC61 /* PictureService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3E91DD20681624005FAC61 /* PictureService.swift */; };
+		2B3E91E0206816E1005FAC61 /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3E91DF206816E1005FAC61 /* CategoryModel.swift */; };
+		2B3E91E220681806005FAC61 /* String+Formatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3E91E120681806005FAC61 /* String+Formatting.swift */; };
+		2B3E91E42068181B005FAC61 /* Date+Formatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3E91E32068181B005FAC61 /* Date+Formatting.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
-		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
-		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
-		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		70B170B38A0AD9D92F7C825F /* Pods_IncredibleNetworkManager_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F16FA50510EB3565A9506577 /* Pods_IncredibleNetworkManager_Tests.framework */; };
 /* End PBXBuildFile section */
@@ -28,21 +39,31 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4833A8FBFEA9F79B1DCC28CD /* IncredibleNetworkManager.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = IncredibleNetworkManager.podspec; path = ../IncredibleNetworkManager.podspec; sourceTree = "<group>"; };
+		2B3E91BB2067EFBA005FAC61 /* PictureModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureModel.swift; sourceTree = "<group>"; };
+		2B3E91C72067F0B3005FAC61 /* ImageListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageListViewController.swift; sourceTree = "<group>"; };
+		2B3E91C92067F0BB005FAC61 /* ImageListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageListViewModel.swift; sourceTree = "<group>"; };
+		2B3E91CD2067F0DF005FAC61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = IncredibleNetworkManager/Base.lproj/LaunchScreen.xib; sourceTree = SOURCE_ROOT; };
+		2B3E91D02067F0E6005FAC61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = IncredibleNetworkManager/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
+		2B3E91D220680832005FAC61 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = IncredibleNetworkManager/Info.plist; sourceTree = SOURCE_ROOT; };
+		2B3E91D420680CC0005FAC61 /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
+		2B3E91D6206813C8005FAC61 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		2B3E91D82068143D005FAC61 /* CollectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionModel.swift; sourceTree = "<group>"; };
+		2B3E91DB206814AB005FAC61 /* BaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
+		2B3E91DD20681624005FAC61 /* PictureService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureService.swift; sourceTree = "<group>"; };
+		2B3E91DF206816E1005FAC61 /* CategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
+		2B3E91E120681806005FAC61 /* String+Formatting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Formatting.swift"; sourceTree = "<group>"; };
+		2B3E91E32068181B005FAC61 /* Date+Formatting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Formatting.swift"; sourceTree = "<group>"; };
+		4833A8FBFEA9F79B1DCC28CD /* IncredibleNetworkManager.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = IncredibleNetworkManager.podspec; path = ../IncredibleNetworkManager.podspec; sourceTree = "<group>"; };
 		4840C982E7D5EBF2F9C87F64 /* Pods-IncredibleNetworkManager_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IncredibleNetworkManager_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-IncredibleNetworkManager_Example/Pods-IncredibleNetworkManager_Example.release.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* IncredibleNetworkManager_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IncredibleNetworkManager_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* IncredibleNetworkManager_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IncredibleNetworkManager_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		68ED7E2341309F45176B57BE /* Pods-IncredibleNetworkManager_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IncredibleNetworkManager_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IncredibleNetworkManager_Tests/Pods-IncredibleNetworkManager_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		7888EBDCA18F3091CE3DC906 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		C31FA71A0BB40318ADEC721C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		7888EBDCA18F3091CE3DC906 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		C31FA71A0BB40318ADEC721C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		E9DDAAD988613A24A00BE3B1 /* Pods-IncredibleNetworkManager_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IncredibleNetworkManager_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IncredibleNetworkManager_Example/Pods-IncredibleNetworkManager_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		F16FA50510EB3565A9506577 /* Pods_IncredibleNetworkManager_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IncredibleNetworkManager_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1ED1A96512FE6856DEF78C5 /* Pods-IncredibleNetworkManager_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IncredibleNetworkManager_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-IncredibleNetworkManager_Tests/Pods-IncredibleNetworkManager_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -80,6 +101,141 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		2B3E91B62067EF49005FAC61 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				2B3E91B72067EF54005FAC61 /* Extensions */,
+				2B3E91B82067EF5B005FAC61 /* Protocols */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		2B3E91B72067EF54005FAC61 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2B3E91E120681806005FAC61 /* String+Formatting.swift */,
+				2B3E91E32068181B005FAC61 /* Date+Formatting.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2B3E91B82067EF5B005FAC61 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		2B3E91BA2067EF98005FAC61 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2B3E91D420680CC0005FAC61 /* BaseModel.swift */,
+				2B3E91BB2067EFBA005FAC61 /* PictureModel.swift */,
+				2B3E91D6206813C8005FAC61 /* UserModel.swift */,
+				2B3E91D82068143D005FAC61 /* CollectionModel.swift */,
+				2B3E91DF206816E1005FAC61 /* CategoryModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2B3E91BD2067EFC4005FAC61 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2B3E91C22067EFFE005FAC61 /* Base Controllers */,
+				2B3E91C12067EFF7005FAC61 /* View Models */,
+				2B3E91C02067EFF1005FAC61 /* Controllers */,
+				2B3E91BF2067EFEA005FAC61 /* Views */,
+				2B3E91BE2067EFDE005FAC61 /* Cells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2B3E91BE2067EFDE005FAC61 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		2B3E91BF2067EFEA005FAC61 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2B3E91CB2067F0C2005FAC61 /* LaunchScreen */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2B3E91C02067EFF1005FAC61 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2B3E91C72067F0B3005FAC61 /* ImageListViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		2B3E91C12067EFF7005FAC61 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				2B3E91C92067F0BB005FAC61 /* ImageListViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		2B3E91C22067EFFE005FAC61 /* Base Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Base Controllers";
+			sourceTree = "<group>";
+		};
+		2B3E91C32067F01B005FAC61 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				2B3E91CF2067F0E6005FAC61 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		2B3E91C42067F02E005FAC61 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				607FACDC1AFB9204008FA782 /* Images.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		2B3E91C52067F035005FAC61 /* Localizations */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Localizations;
+			sourceTree = "<group>";
+		};
+		2B3E91C62067F03D005FAC61 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2B3E91D220680832005FAC61 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2B3E91CB2067F0C2005FAC61 /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				2B3E91CC2067F0DF005FAC61 /* LaunchScreen.xib */,
+			);
+			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		2B3E91DA2068145D005FAC61 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				2B3E91DB206814AB005FAC61 /* BaseService.swift */,
+				2B3E91DD20681624005FAC61 /* PictureService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
@@ -105,22 +261,17 @@
 			isa = PBXGroup;
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				607FACD71AFB9204008FA782 /* ViewController.swift */,
-				607FACD91AFB9204008FA782 /* Main.storyboard */,
-				607FACDC1AFB9204008FA782 /* Images.xcassets */,
-				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
-				607FACD31AFB9204008FA782 /* Supporting Files */,
+				2B3E91B62067EF49005FAC61 /* Utils */,
+				2B3E91DA2068145D005FAC61 /* Service */,
+				2B3E91BA2067EF98005FAC61 /* Model */,
+				2B3E91BD2067EFC4005FAC61 /* Views */,
+				2B3E91C32067F01B005FAC61 /* Storyboards */,
+				2B3E91C52067F035005FAC61 /* Localizations */,
+				2B3E91C42067F02E005FAC61 /* Assets */,
+				2B3E91C62067F03D005FAC61 /* Supporting Files */,
 			);
 			name = "Example for IncredibleNetworkManager";
 			path = IncredibleNetworkManager;
-			sourceTree = "<group>";
-		};
-		607FACD31AFB9204008FA782 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				607FACD41AFB9204008FA782 /* Info.plist */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		607FACE81AFB9204008FA782 /* Tests */ = {
@@ -248,8 +399,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
-				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
+				2B3E91D320680832005FAC61 /* Info.plist in Resources */,
+				2B3E91D12067F0E6005FAC61 /* Main.storyboard in Resources */,
+				2B3E91CE2067F0DF005FAC61 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -375,8 +527,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				2B3E91DE20681624005FAC61 /* PictureService.swift in Sources */,
+				2B3E91DC206814AB005FAC61 /* BaseService.swift in Sources */,
+				2B3E91C82067F0B3005FAC61 /* ImageListViewController.swift in Sources */,
+				2B3E91E0206816E1005FAC61 /* CategoryModel.swift in Sources */,
+				2B3E91BC2067EFBA005FAC61 /* PictureModel.swift in Sources */,
+				2B3E91E220681806005FAC61 /* String+Formatting.swift in Sources */,
+				2B3E91CA2067F0BB005FAC61 /* ImageListViewModel.swift in Sources */,
+				2B3E91D92068143D005FAC61 /* CollectionModel.swift in Sources */,
+				2B3E91E42068181B005FAC61 /* Date+Formatting.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				2B3E91D7206813C8005FAC61 /* UserModel.swift in Sources */,
+				2B3E91D520680CC0005FAC61 /* BaseModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,20 +561,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		607FACD91AFB9204008FA782 /* Main.storyboard */ = {
+		2B3E91CC2067F0DF005FAC61 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				607FACDA1AFB9204008FA782 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		607FACDE1AFB9204008FA782 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				607FACDF1AFB9204008FA782 /* Base */,
+				2B3E91CD2067F0DF005FAC61 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		2B3E91CF2067F0E6005FAC61 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2B3E91D02067F0E6005FAC61 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

@@ -1,0 +1,22 @@
+PODS:
+  - IncredibleNetworkManager (0.1.0)
+  - Nimble (7.0.3)
+  - Quick (1.2.0)
+
+DEPENDENCIES:
+  - IncredibleNetworkManager (from `../`)
+  - Nimble (~> 7.0.2)
+  - Quick (~> 1.2.0)
+
+EXTERNAL SOURCES:
+  IncredibleNetworkManager:
+    :path: ../
+
+SPEC CHECKSUMS:
+  IncredibleNetworkManager: 9edf06792e4804f9bd443e4bae69a8de20aa41f7
+  Nimble: 7f5a9c447a33002645a071bddafbfb24ea70e0ac
+  Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
+
+PODFILE CHECKSUM: 45dc6c7fc0aabf9527b4d7b9c52cc37a6e9348bb
+
+COCOAPODS: 1.4.0

@@ -1,0 +1,6 @@
+framework module IncredibleNetworkManager {
+  umbrella header "IncredibleNetworkManager-umbrella.h"
+
+  export *
+  module * { export * }
+}
