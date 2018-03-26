@@ -50,6 +50,9 @@
 		2B3E91EE20685215005FAC61 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3E91ED20685215005FAC61 /* JSON.swift */; };
 		2B3E91EF20685215005FAC61 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3E91ED20685215005FAC61 /* JSON.swift */; };
 		2B3E91F020685215005FAC61 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3E91ED20685215005FAC61 /* JSON.swift */; };
+		2B3E91F320687221005FAC61 /* Data+Parse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3E91F220687221005FAC61 /* Data+Parse.swift */; };
+		2B3E91F420687221005FAC61 /* Data+Parse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3E91F220687221005FAC61 /* Data+Parse.swift */; };
+		2B3E91F520687221005FAC61 /* Data+Parse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3E91F220687221005FAC61 /* Data+Parse.swift */; };
 		31C39ED8CB1C9317F1F2840FC919662D /* PostNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0D34DBF4CE55E4FF1BADBA826F9389 /* PostNotification.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		326656A1E64E10CA84C8D2DDFBCEB601 /* QuickSpec.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8315675F3D2B2385E834043F85C676 /* QuickSpec.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		32B38992751B96F21324BFC9923BFCBD /* AssertionDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495BFC3F9A44D525D4BFC5B10557E6C3 /* AssertionDispatcher.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
@@ -218,6 +221,7 @@
 		2B3E91B22067EDBA005FAC61 /* BaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
 		2B3E91E920682170005FAC61 /* UIColor+Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Utility.swift"; sourceTree = "<group>"; };
 		2B3E91ED20685215005FAC61 /* JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
+		2B3E91F220687221005FAC61 /* Data+Parse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Parse.swift"; sourceTree = "<group>"; };
 		2DD6CC02AD6D4C0E7D1169EF9ECB3706 /* ContainElementSatisfying.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContainElementSatisfying.swift; path = Sources/Nimble/Matchers/ContainElementSatisfying.swift; sourceTree = "<group>"; };
 		2E8E430D83F3CC7F72E348A0B222C46F /* QuickTestSuite.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QuickTestSuite.swift; path = Sources/Quick/QuickTestSuite.swift; sourceTree = "<group>"; };
 		301223B3EB74E21CDB1303C459B57231 /* ExampleHooks.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExampleHooks.swift; path = Sources/Quick/Hooks/ExampleHooks.swift; sourceTree = "<group>"; };
@@ -435,6 +439,7 @@
 				2B3E919320669C47005FAC61 /* String+Utility.swift */,
 				2B3E91E920682170005FAC61 /* UIColor+Utility.swift */,
 				2B3E91ED20685215005FAC61 /* JSON.swift */,
+				2B3E91F220687221005FAC61 /* Data+Parse.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -973,6 +978,7 @@
 				2B3E91EB20682170005FAC61 /* UIColor+Utility.swift in Sources */,
 				2B3E91832066952F005FAC61 /* CacheManager.swift in Sources */,
 				2B3E91EF20685215005FAC61 /* JSON.swift in Sources */,
+				2B3E91F420687221005FAC61 /* Data+Parse.swift in Sources */,
 				2B3E919520669C47005FAC61 /* String+Utility.swift in Sources */,
 				2B3E917C2066951A005FAC61 /* NetworkManager.swift in Sources */,
 				2B3E918D20669AB0005FAC61 /* Parser.swift in Sources */,
@@ -1024,6 +1030,7 @@
 				2B3E91EC20682170005FAC61 /* UIColor+Utility.swift in Sources */,
 				2B3E91842066952F005FAC61 /* CacheManager.swift in Sources */,
 				2B3E91F020685215005FAC61 /* JSON.swift in Sources */,
+				2B3E91F520687221005FAC61 /* Data+Parse.swift in Sources */,
 				2B3E919620669C47005FAC61 /* String+Utility.swift in Sources */,
 				2B3E917D2066951A005FAC61 /* NetworkManager.swift in Sources */,
 				2B3E918E20669AB0005FAC61 /* Parser.swift in Sources */,
@@ -1042,6 +1049,7 @@
 				2B3E91EA20682170005FAC61 /* UIColor+Utility.swift in Sources */,
 				2B3E91822066952F005FAC61 /* CacheManager.swift in Sources */,
 				2B3E91EE20685215005FAC61 /* JSON.swift in Sources */,
+				2B3E91F320687221005FAC61 /* Data+Parse.swift in Sources */,
 				2B3E919420669C47005FAC61 /* String+Utility.swift in Sources */,
 				2B3E917B2066951A005FAC61 /* NetworkManager.swift in Sources */,
 				2B3E918C20669AB0005FAC61 /* Parser.swift in Sources */,

@@ -71,7 +71,7 @@ class Parser: NSObject {
 
     }
 
-    open static func jsonObject(_ data: Data?) -> AnyObject?{
+    open static func jsonObject(_ data: Data?) -> AnyObject? {
         if let data = data {
             do {
                 let json = try JSONSerialization.jsonObject(with: data, options: .allowFragments)
