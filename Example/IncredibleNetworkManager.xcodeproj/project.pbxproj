@@ -23,6 +23,8 @@
 		2B3E91E220681806005FAC61 /* String+Formatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3E91E120681806005FAC61 /* String+Formatting.swift */; };
 		2B3E91E42068181B005FAC61 /* Date+Formatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3E91E32068181B005FAC61 /* Date+Formatting.swift */; };
 		2B3E91FA2068869E005FAC61 /* ImageLoadedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3E91F92068869E005FAC61 /* ImageLoadedCollectionViewCell.swift */; };
+		5EE7CD34206958A40050CEBF /* CoverFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE7CD33206958A40050CEBF /* CoverFlowLayout.swift */; };
+		5EE7CD3820695E2A0050CEBF /* CollectionViewLayoutAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE7CD3720695E2A0050CEBF /* CollectionViewLayoutAttributes.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
@@ -57,6 +59,8 @@
 		2B3E91F92068869E005FAC61 /* ImageLoadedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoadedCollectionViewCell.swift; sourceTree = "<group>"; };
 		4833A8FBFEA9F79B1DCC28CD /* IncredibleNetworkManager.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = IncredibleNetworkManager.podspec; path = ../IncredibleNetworkManager.podspec; sourceTree = "<group>"; };
 		4840C982E7D5EBF2F9C87F64 /* Pods-IncredibleNetworkManager_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IncredibleNetworkManager_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-IncredibleNetworkManager_Example/Pods-IncredibleNetworkManager_Example.release.xcconfig"; sourceTree = "<group>"; };
+		5EE7CD33206958A40050CEBF /* CoverFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverFlowLayout.swift; sourceTree = "<group>"; };
+		5EE7CD3720695E2A0050CEBF /* CollectionViewLayoutAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewLayoutAttributes.swift; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* IncredibleNetworkManager_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IncredibleNetworkManager_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -106,6 +110,7 @@
 		2B3E91B62067EF49005FAC61 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				5EE7CD32206958800050CEBF /* CollectionViewEffect */,
 				2B3E91F120687035005FAC61 /* Contants */,
 				2B3E91B72067EF54005FAC61 /* Extensions */,
 				2B3E91B82067EF5B005FAC61 /* Protocols */,
@@ -269,6 +274,15 @@
 				2B3E91C92067F0BB005FAC61 /* ImageListViewModel.swift */,
 			);
 			path = ImageList;
+			sourceTree = "<group>";
+		};
+		5EE7CD32206958800050CEBF /* CollectionViewEffect */ = {
+			isa = PBXGroup;
+			children = (
+				5EE7CD33206958A40050CEBF /* CoverFlowLayout.swift */,
+				5EE7CD3720695E2A0050CEBF /* CollectionViewLayoutAttributes.swift */,
+			);
+			path = CollectionViewEffect;
 			sourceTree = "<group>";
 		};
 		607FACC71AFB9204008FA782 = {
@@ -565,7 +579,9 @@
 				2B3E91FA2068869E005FAC61 /* ImageLoadedCollectionViewCell.swift in Sources */,
 				2B3E91DE20681624005FAC61 /* PictureService.swift in Sources */,
 				2B3E91DC206814AB005FAC61 /* BaseService.swift in Sources */,
+				5EE7CD34206958A40050CEBF /* CoverFlowLayout.swift in Sources */,
 				2B3E91C82067F0B3005FAC61 /* ImageListViewController.swift in Sources */,
+				5EE7CD3820695E2A0050CEBF /* CollectionViewLayoutAttributes.swift in Sources */,
 				2B3E91E0206816E1005FAC61 /* CategoryModel.swift in Sources */,
 				2B3E91BC2067EFBA005FAC61 /* PictureModel.swift in Sources */,
 				2B3E91E220681806005FAC61 /* String+Formatting.swift in Sources */,

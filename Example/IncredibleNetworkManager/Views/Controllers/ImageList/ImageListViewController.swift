@@ -28,7 +28,8 @@ class ImageListViewController: UIViewController {
     }
 }
 
-extension ImageListViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+extension ImageListViewController: UICollectionViewDelegate,
+UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return viewModel.sectionCount()
     }
@@ -51,5 +52,9 @@ extension ImageListViewController: UICollectionViewDelegate, UICollectionViewDat
 
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         viewModel.scrollViewDidScroll(scrollView, collectionView: collectionView)
+    }
+
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+
     }
 }

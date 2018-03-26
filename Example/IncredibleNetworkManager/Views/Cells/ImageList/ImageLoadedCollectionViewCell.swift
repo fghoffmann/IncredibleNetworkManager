@@ -15,6 +15,9 @@ class ImageLoadedCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var imageViewCenterYLayoutContraint: NSLayoutConstraint!
 
+    var layoutChangeSegmentedControl: UISegmentedControl?
+    var coverFlowCollectionViewLayout: CoverFlowLayout?
+
     var parallaxOffset: CGFloat = 0 {
         didSet {
             imageViewCenterYLayoutContraint.constant = parallaxOffset
@@ -28,10 +31,11 @@ class ImageLoadedCollectionViewCell: UICollectionViewCell {
 
     override func apply(_ layoutAttributes: UICollectionViewLayoutAttributes) {
         super.apply(layoutAttributes)
-        imageView.transform = CGAffineTransform(rotationAngle: CGFloat(-14) * .pi / 180)
-        titleLabel.transform = CGAffineTransform(rotationAngle: CGFloat(-14) * .pi / 180)
-        dateLabel.transform = CGAffineTransform(rotationAngle: CGFloat(-14) * .pi / 180)
-        likesLabel.transform = CGAffineTransform(rotationAngle: CGFloat(-14) * .pi / 180)
+        mask?.alpha = 0.0
+        self.layer.shouldRasterize = false
+
+        self.layer.shouldRasterize = layoutAttributes.shouldRasterize
+        mask?.alpha = layoutAttributes.maskingValue
     }
 
     func updateParalaxOffset(collectionViewBounds bounds: CGRect) {

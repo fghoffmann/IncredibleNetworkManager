@@ -36,7 +36,7 @@ extension ImageListViewModel {
         cell.dateLabel.text = pictures[indexPath.item].createdAt.toString(format: "MM-dd-yyyy hh:mm")
         cell.dateLabel.text = "\(pictures[indexPath.item].likes) likes"
         cell.updateParalaxOffset(collectionViewBounds: collectionView.bounds)
-        _ = cell.imageView.setImage(pictures[indexPath.item].urls["thumb"]) { _ in }
+        //_ = cell.imageView.setImage(pictures[indexPath.item].urls["thumb"]) { _ in }
         return cell
     }
 
