@@ -9,22 +9,66 @@
 import UIKit
 
 class ImageListViewController: UIViewController {
+    @IBOutlet weak var loadingView: UIView!
+    @IBOutlet weak var loadingLabel: UILabel!
 
     @IBOutlet weak var collectionView: UICollectionView!
 
     let viewModel = ImageListViewModel()
+    let coverFlowCollectionViewLayout = CoverFlowLayout()
+    var refresher: UIRefreshControl!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        collectionView.contentInset = UIEdgeInsets(top: 50, left: 0, bottom: 50, right: 0)
+        collectionView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        collectionView.allowsSelection = false
+        collectionView.indicatorStyle = .white
+        collectionView.collectionViewLayout = coverFlowCollectionViewLayout
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(handleTapGestureRecognizer))
+        self.collectionView.addGestureRecognizer(tapGestureRecognizer)
+        self.collectionView.collectionViewLayout.invalidateLayout()
 
-        let layout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
-        layout.itemSize = CGSize(width: collectionView.bounds.width, height: 160)
+        let gradientView = GradientView()
+        gradientView.frame = self.view.frame
+        gradientView.frame.origin.x = 0
+        gradientView.frame.origin.y = 0
+        gradientView.startColor = UIColor(red: 55/255, green: 100/255, blue: 142/255, alpha: 0.8)
+        gradientView.endColor = UIColor(red: 7/255, green: 12/255, blue: 17/255, alpha: 1)
+        //collectionView.backgroundView = gradientView
+        self.view.addSubview(gradientView)
+        self.view.sendSubview(toBack: gradientView)
+        viewModel.getData(viewController: self)
+    }
 
-        viewModel.getData(collectionView: collectionView)
+    @objc func handleTapGestureRecognizer(_ recognizer: UITapGestureRecognizer) {
+        if recognizer.state != .recognized {
+            return
+        }
 
-        // Do any additional setup after loading the view.
+        let point = recognizer.location(in: self.collectionView)
+        guard let indexPath = self.collectionView.indexPathForItem(at: point) else {
+            return
+        }
+
+        let centered = coverFlowCollectionViewLayout.indexPathIsCentered(indexPath)
+
+        if (centered) {
+            guard let cell = self.collectionView.cellForItem(at: indexPath) else {
+                return
+            }
+
+            UIView.transition(with: cell, duration: 0.5, options: .transitionFlipFromRight, animations: {
+                cell.bounds = cell.bounds
+            }, completion: nil)
+        } else {
+            var proposedOffset = CGPoint(x: 0, y: 0)
+            proposedOffset.x = CGFloat(indexPath.item) * (coverFlowCollectionViewLayout.itemSize.width + coverFlowCollectionViewLayout.minimumLineSpacing)
+
+            let contentOffset = coverFlowCollectionViewLayout.targetContentOffset(forProposedContentOffset: proposedOffset, withScrollingVelocity: CGPoint(x: 0, y: 0))
+
+            self.collectionView.setContentOffset(contentOffset, animated: true)
+        }
     }
 }
 
@@ -51,10 +95,19 @@ UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     }
 
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        viewModel.scrollViewDidScroll(scrollView, collectionView: collectionView)
+        let offset = scrollView.contentOffset
+        let inset = scrollView.contentInset
+        let y: CGFloat = offset.x - inset.left
+        let reload_distance: CGFloat = -75
+        if y < reload_distance {
+            viewModel.getData(viewController: self)
+        } else if y > collectionView.collectionViewLayout.collectionViewContentSize.width - UIScreen.main.bounds.width {
+            viewModel.getMoreData(viewController: self)
+        }
     }
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-
+        let left = 58 * UIScreen.main.bounds.width / 375
+        return UIEdgeInsetsMake(0, left, 0, 300)
     }
 }

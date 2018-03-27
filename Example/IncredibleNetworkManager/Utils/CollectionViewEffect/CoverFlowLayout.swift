@@ -21,9 +21,10 @@ class CoverFlowLayout: UICollectionViewFlowLayout {
 
         // Set up our basic properties
         self.scrollDirection = .horizontal
-        self.itemSize = CGSize(width: 180, height: 180)
+        let size = 220 * UIScreen.main.bounds.width / 320
+        self.itemSize = CGSize(width: size, height: size)
         self.minimumLineSpacing = -60      // Gets items up close to one another
-        self.minimumInteritemSpacing = 200 // Makes sure we only have 1 row of items in portrait mode
+        self.minimumInteritemSpacing = 1000 // Makes sure we only have 1 row of items in portrait mode
     }
 
     required init?(coder aDecoder: NSCoder) {
@@ -48,7 +49,7 @@ class CoverFlowLayout: UICollectionViewFlowLayout {
             }
         }
 
-        return layoutAttributesArray;
+        return layoutAttributesArray
     }
 
     override func layoutAttributesForItem(at indexPath: IndexPath) -> UICollectionViewLayoutAttributes? {
@@ -70,7 +71,7 @@ class CoverFlowLayout: UICollectionViewFlowLayout {
         // First, calculate the proposed center of the collection view once the collection view has stopped
         var offsetAdjustment = MAXFLOAT;
         let horizontalCenter = proposedContentOffset.x +
-            (self.collectionView?.bounds.width ?? 0 / 2.0)
+            ((self.collectionView?.bounds.width ?? 0) / 2.0)
         // Use the center to find the proposed visible rect.
         let proposedRect = CGRect(x: proposedContentOffset.x, y: 0.0,
                                   width: self.collectionView?.bounds.size.width ?? 0.0,
@@ -124,13 +125,13 @@ class CoverFlowLayout: UICollectionViewFlowLayout {
                 CATransform3DIdentity,
                 (isLeft ? -FLOW_OFFSET : FLOW_OFFSET) *
                     abs(distanceFromVisibleRectToItem / TRANSLATE_DISTANCE),
-                0, (1 - CGFloat(fabsf(Float(normalizedDistance)))) * 40000 + (isLeft ? 200 : 0))
+                0, (1 - CGFloat(fabsf(Float(normalizedDistance)))) * 40000 + (isLeft ? 240 : 0))
 
             transform = CATransform3DTranslate(
                 CATransform3DIdentity,
                 (isLeft ? -FLOW_OFFSET : FLOW_OFFSET) *
                     abs(distanceFromVisibleRectToItem / TRANSLATE_DISTANCE),
-                0, (1 - CGFloat(fabsf(Float(normalizedDistance)))) * 40000 + (isLeft ? 200 : 0))
+                0, (1 - CGFloat(fabsf(Float(normalizedDistance)))) * 40000 + (isLeft ? 240 : 0))
 
             // Set the perspective of the transform.
             transform.m34 = -1/(4.6777 * self.itemSize.width)
@@ -163,7 +164,7 @@ class CoverFlowLayout: UICollectionViewFlowLayout {
 
         // Rasterize the cells for smoother edges.
         attributes.shouldRasterize = true
-        attributes.maskingValue = maskAlpha
+        attributes.maskingValue = 0
     }
 
     func indexPathIsCentered(_ indexPath: IndexPath) -> Bool {

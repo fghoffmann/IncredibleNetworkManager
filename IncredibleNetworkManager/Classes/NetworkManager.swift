@@ -42,7 +42,7 @@ public class NetworkManager: NSObject {
                                          completion: { data in
             completion(data)
         }, timeoutAfter: timeout) {
-
+            onTimeout!()
         }
     }
 }

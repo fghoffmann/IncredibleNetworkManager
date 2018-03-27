@@ -52,7 +52,7 @@ public extension UIImageView {
         let initialLoadedUrl = self.loadedUrl as String
 
         if let thumbnailUrl = thumbnailUrl {
-            UIImage.loadImage(thumbnailUrl) { (image) in
+            _ = UIImage.loadImage(thumbnailUrl) { (image) in
                 if(initialLoadedUrl == self.loadedUrl && !self.alreadyLoadedOriginalImage) {
                     self.image = image
                     if(animated) {

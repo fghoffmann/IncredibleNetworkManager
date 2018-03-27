@@ -26,33 +26,30 @@
 		2B3E91822066952F005FAC61 /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3E91812066952F005FAC61 /* CacheManager.swift */; };
 		2B3E91832066952F005FAC61 /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3E91812066952F005FAC61 /* CacheManager.swift */; };
 		2B3E91842066952F005FAC61 /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3E91812066952F005FAC61 /* CacheManager.swift */; };
-		2B3E9188206697DF005FAC61 /* UIImageView+NetworkLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3E9187206697DF005FAC61 /* UIImageView+NetworkLoading.swift */; };
-		2B3E9189206697DF005FAC61 /* UIImageView+NetworkLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3E9187206697DF005FAC61 /* UIImageView+NetworkLoading.swift */; };
-		2B3E918A206697DF005FAC61 /* UIImageView+NetworkLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3E9187206697DF005FAC61 /* UIImageView+NetworkLoading.swift */; };
 		2B3E918C20669AB0005FAC61 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3E918B20669AB0005FAC61 /* Parser.swift */; };
 		2B3E918D20669AB0005FAC61 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3E918B20669AB0005FAC61 /* Parser.swift */; };
 		2B3E918E20669AB0005FAC61 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3E918B20669AB0005FAC61 /* Parser.swift */; };
 		2B3E919020669BA9005FAC61 /* Requester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3E918F20669BA9005FAC61 /* Requester.swift */; };
 		2B3E919120669BA9005FAC61 /* Requester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3E918F20669BA9005FAC61 /* Requester.swift */; };
 		2B3E919220669BA9005FAC61 /* Requester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3E918F20669BA9005FAC61 /* Requester.swift */; };
-		2B3E919420669C47005FAC61 /* String+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3E919320669C47005FAC61 /* String+Utility.swift */; };
-		2B3E919520669C47005FAC61 /* String+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3E919320669C47005FAC61 /* String+Utility.swift */; };
-		2B3E919620669C47005FAC61 /* String+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3E919320669C47005FAC61 /* String+Utility.swift */; };
-		2B3E919C206710F7005FAC61 /* UIImage+NetworkLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3E919B206710F7005FAC61 /* UIImage+NetworkLoading.swift */; };
-		2B3E919D206710F7005FAC61 /* UIImage+NetworkLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3E919B206710F7005FAC61 /* UIImage+NetworkLoading.swift */; };
-		2B3E919E206710F7005FAC61 /* UIImage+NetworkLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3E919B206710F7005FAC61 /* UIImage+NetworkLoading.swift */; };
-		2B3E91B32067EDBA005FAC61 /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3E91B22067EDBA005FAC61 /* BaseService.swift */; };
-		2B3E91B42067EDBA005FAC61 /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3E91B22067EDBA005FAC61 /* BaseService.swift */; };
-		2B3E91B52067EDBA005FAC61 /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3E91B22067EDBA005FAC61 /* BaseService.swift */; };
-		2B3E91EA20682170005FAC61 /* UIColor+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3E91E920682170005FAC61 /* UIColor+Utility.swift */; };
-		2B3E91EB20682170005FAC61 /* UIColor+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3E91E920682170005FAC61 /* UIColor+Utility.swift */; };
-		2B3E91EC20682170005FAC61 /* UIColor+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3E91E920682170005FAC61 /* UIColor+Utility.swift */; };
-		2B3E91EE20685215005FAC61 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3E91ED20685215005FAC61 /* JSON.swift */; };
-		2B3E91EF20685215005FAC61 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3E91ED20685215005FAC61 /* JSON.swift */; };
-		2B3E91F020685215005FAC61 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3E91ED20685215005FAC61 /* JSON.swift */; };
-		2B3E91F320687221005FAC61 /* Data+Parse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3E91F220687221005FAC61 /* Data+Parse.swift */; };
-		2B3E91F420687221005FAC61 /* Data+Parse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3E91F220687221005FAC61 /* Data+Parse.swift */; };
-		2B3E91F520687221005FAC61 /* Data+Parse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3E91F220687221005FAC61 /* Data+Parse.swift */; };
+		2B3E92082069F517005FAC61 /* UIColor+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3E92022069F517005FAC61 /* UIColor+Utility.swift */; };
+		2B3E92092069F517005FAC61 /* UIColor+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3E92022069F517005FAC61 /* UIColor+Utility.swift */; };
+		2B3E920A2069F517005FAC61 /* UIColor+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3E92022069F517005FAC61 /* UIColor+Utility.swift */; };
+		2B3E920B2069F517005FAC61 /* UIImage+NetworkLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3E92032069F517005FAC61 /* UIImage+NetworkLoading.swift */; };
+		2B3E920C2069F517005FAC61 /* UIImage+NetworkLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3E92032069F517005FAC61 /* UIImage+NetworkLoading.swift */; };
+		2B3E920D2069F517005FAC61 /* UIImage+NetworkLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3E92032069F517005FAC61 /* UIImage+NetworkLoading.swift */; };
+		2B3E920E2069F517005FAC61 /* Data+Parse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3E92042069F517005FAC61 /* Data+Parse.swift */; };
+		2B3E920F2069F517005FAC61 /* Data+Parse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3E92042069F517005FAC61 /* Data+Parse.swift */; };
+		2B3E92102069F517005FAC61 /* Data+Parse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3E92042069F517005FAC61 /* Data+Parse.swift */; };
+		2B3E92112069F517005FAC61 /* String+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3E92052069F517005FAC61 /* String+Utility.swift */; };
+		2B3E92122069F517005FAC61 /* String+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3E92052069F517005FAC61 /* String+Utility.swift */; };
+		2B3E92132069F517005FAC61 /* String+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3E92052069F517005FAC61 /* String+Utility.swift */; };
+		2B3E92142069F517005FAC61 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3E92062069F517005FAC61 /* JSON.swift */; };
+		2B3E92152069F517005FAC61 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3E92062069F517005FAC61 /* JSON.swift */; };
+		2B3E92162069F517005FAC61 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3E92062069F517005FAC61 /* JSON.swift */; };
+		2B3E92172069F517005FAC61 /* UIImageView+NetworkLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3E92072069F517005FAC61 /* UIImageView+NetworkLoading.swift */; };
+		2B3E92182069F517005FAC61 /* UIImageView+NetworkLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3E92072069F517005FAC61 /* UIImageView+NetworkLoading.swift */; };
+		2B3E92192069F517005FAC61 /* UIImageView+NetworkLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3E92072069F517005FAC61 /* UIImageView+NetworkLoading.swift */; };
 		31C39ED8CB1C9317F1F2840FC919662D /* PostNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0D34DBF4CE55E4FF1BADBA826F9389 /* PostNotification.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		326656A1E64E10CA84C8D2DDFBCEB601 /* QuickSpec.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8315675F3D2B2385E834043F85C676 /* QuickSpec.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		32B38992751B96F21324BFC9923BFCBD /* AssertionDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495BFC3F9A44D525D4BFC5B10557E6C3 /* AssertionDispatcher.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
@@ -213,15 +210,14 @@
 		2727DBDF3F41A52F002F6B1992165881 /* Nimble.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Nimble.h; path = Sources/Nimble/Nimble.h; sourceTree = "<group>"; };
 		2B3E91792066951A005FAC61 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		2B3E91812066952F005FAC61 /* CacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
-		2B3E9187206697DF005FAC61 /* UIImageView+NetworkLoading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+NetworkLoading.swift"; sourceTree = "<group>"; };
 		2B3E918B20669AB0005FAC61 /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
 		2B3E918F20669BA9005FAC61 /* Requester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requester.swift; sourceTree = "<group>"; };
-		2B3E919320669C47005FAC61 /* String+Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Utility.swift"; sourceTree = "<group>"; };
-		2B3E919B206710F7005FAC61 /* UIImage+NetworkLoading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+NetworkLoading.swift"; sourceTree = "<group>"; };
-		2B3E91B22067EDBA005FAC61 /* BaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
-		2B3E91E920682170005FAC61 /* UIColor+Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Utility.swift"; sourceTree = "<group>"; };
-		2B3E91ED20685215005FAC61 /* JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
-		2B3E91F220687221005FAC61 /* Data+Parse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Parse.swift"; sourceTree = "<group>"; };
+		2B3E92022069F517005FAC61 /* UIColor+Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Utility.swift"; sourceTree = "<group>"; };
+		2B3E92032069F517005FAC61 /* UIImage+NetworkLoading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+NetworkLoading.swift"; sourceTree = "<group>"; };
+		2B3E92042069F517005FAC61 /* Data+Parse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+Parse.swift"; sourceTree = "<group>"; };
+		2B3E92052069F517005FAC61 /* String+Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Utility.swift"; sourceTree = "<group>"; };
+		2B3E92062069F517005FAC61 /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
+		2B3E92072069F517005FAC61 /* UIImageView+NetworkLoading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+NetworkLoading.swift"; sourceTree = "<group>"; };
 		2DD6CC02AD6D4C0E7D1169EF9ECB3706 /* ContainElementSatisfying.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContainElementSatisfying.swift; path = Sources/Nimble/Matchers/ContainElementSatisfying.swift; sourceTree = "<group>"; };
 		2E8E430D83F3CC7F72E348A0B222C46F /* QuickTestSuite.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QuickTestSuite.swift; path = Sources/Quick/QuickTestSuite.swift; sourceTree = "<group>"; };
 		301223B3EB74E21CDB1303C459B57231 /* ExampleHooks.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExampleHooks.swift; path = Sources/Quick/Hooks/ExampleHooks.swift; sourceTree = "<group>"; };
@@ -425,31 +421,23 @@
 				2B3E91812066952F005FAC61 /* CacheManager.swift */,
 				2B3E918B20669AB0005FAC61 /* Parser.swift */,
 				2B3E918F20669BA9005FAC61 /* Requester.swift */,
-				2B3E91B22067EDBA005FAC61 /* BaseService.swift */,
 			);
 			name = Classes;
 			path = IncredibleNetworkManager/Classes;
 			sourceTree = "<group>";
 		};
-		2B3E918520669604005FAC61 /* Extensions */ = {
+		2B3E92012069F517005FAC61 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				2B3E9187206697DF005FAC61 /* UIImageView+NetworkLoading.swift */,
-				2B3E919B206710F7005FAC61 /* UIImage+NetworkLoading.swift */,
-				2B3E919320669C47005FAC61 /* String+Utility.swift */,
-				2B3E91E920682170005FAC61 /* UIColor+Utility.swift */,
-				2B3E91ED20685215005FAC61 /* JSON.swift */,
-				2B3E91F220687221005FAC61 /* Data+Parse.swift */,
+				2B3E92022069F517005FAC61 /* UIColor+Utility.swift */,
+				2B3E92032069F517005FAC61 /* UIImage+NetworkLoading.swift */,
+				2B3E92042069F517005FAC61 /* Data+Parse.swift */,
+				2B3E92052069F517005FAC61 /* String+Utility.swift */,
+				2B3E92062069F517005FAC61 /* JSON.swift */,
+				2B3E92072069F517005FAC61 /* UIImageView+NetworkLoading.swift */,
 			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
-		2B3E918620669624005FAC61 /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Protocols;
-			path = IncredibleNetworkManager/Protocols;
+			name = Extensions;
+			path = IncredibleNetworkManager/Extensions;
 			sourceTree = "<group>";
 		};
 		3C3FDCB7F0ADE0D02BF96EB1D4E2C89F /* Pods */ = {
@@ -630,8 +618,7 @@
 			isa = PBXGroup;
 			children = (
 				2B3E91782066951A005FAC61 /* Classes */,
-				2B3E918520669604005FAC61 /* Extensions */,
-				2B3E918620669624005FAC61 /* Protocols */,
+				2B3E92012069F517005FAC61 /* Extensions */,
 				89B1529CCF2B753B7738EBF4883D04A9 /* Pod */,
 				43227864DAC8F5A9408AFCD38069640B /* Support Files */,
 			);
@@ -975,18 +962,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B3E91EB20682170005FAC61 /* UIColor+Utility.swift in Sources */,
+				2B3E920C2069F517005FAC61 /* UIImage+NetworkLoading.swift in Sources */,
+				2B3E92152069F517005FAC61 /* JSON.swift in Sources */,
 				2B3E91832066952F005FAC61 /* CacheManager.swift in Sources */,
-				2B3E91EF20685215005FAC61 /* JSON.swift in Sources */,
-				2B3E91F420687221005FAC61 /* Data+Parse.swift in Sources */,
-				2B3E919520669C47005FAC61 /* String+Utility.swift in Sources */,
 				2B3E917C2066951A005FAC61 /* NetworkManager.swift in Sources */,
+				2B3E920F2069F517005FAC61 /* Data+Parse.swift in Sources */,
+				2B3E92182069F517005FAC61 /* UIImageView+NetworkLoading.swift in Sources */,
+				2B3E92092069F517005FAC61 /* UIColor+Utility.swift in Sources */,
 				2B3E918D20669AB0005FAC61 /* Parser.swift in Sources */,
-				2B3E919D206710F7005FAC61 /* UIImage+NetworkLoading.swift in Sources */,
+				2B3E92122069F517005FAC61 /* String+Utility.swift in Sources */,
 				B6598A7547EDD64EC3AEC39D4C1F31F9 /* Pods-IncredibleNetworkManager_Example-dummy.m in Sources */,
 				2B3E919120669BA9005FAC61 /* Requester.swift in Sources */,
-				2B3E9189206697DF005FAC61 /* UIImageView+NetworkLoading.swift in Sources */,
-				2B3E91B42067EDBA005FAC61 /* BaseService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1027,18 +1013,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B3E91EC20682170005FAC61 /* UIColor+Utility.swift in Sources */,
+				2B3E920D2069F517005FAC61 /* UIImage+NetworkLoading.swift in Sources */,
+				2B3E92162069F517005FAC61 /* JSON.swift in Sources */,
 				2B3E91842066952F005FAC61 /* CacheManager.swift in Sources */,
-				2B3E91F020685215005FAC61 /* JSON.swift in Sources */,
-				2B3E91F520687221005FAC61 /* Data+Parse.swift in Sources */,
-				2B3E919620669C47005FAC61 /* String+Utility.swift in Sources */,
 				2B3E917D2066951A005FAC61 /* NetworkManager.swift in Sources */,
+				2B3E92102069F517005FAC61 /* Data+Parse.swift in Sources */,
+				2B3E92192069F517005FAC61 /* UIImageView+NetworkLoading.swift in Sources */,
+				2B3E920A2069F517005FAC61 /* UIColor+Utility.swift in Sources */,
 				2B3E918E20669AB0005FAC61 /* Parser.swift in Sources */,
-				2B3E919E206710F7005FAC61 /* UIImage+NetworkLoading.swift in Sources */,
+				2B3E92132069F517005FAC61 /* String+Utility.swift in Sources */,
 				32BC803029D9BB0109F749EE05856952 /* Pods-IncredibleNetworkManager_Tests-dummy.m in Sources */,
 				2B3E919220669BA9005FAC61 /* Requester.swift in Sources */,
-				2B3E918A206697DF005FAC61 /* UIImageView+NetworkLoading.swift in Sources */,
-				2B3E91B52067EDBA005FAC61 /* BaseService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1046,18 +1031,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B3E91EA20682170005FAC61 /* UIColor+Utility.swift in Sources */,
+				2B3E920B2069F517005FAC61 /* UIImage+NetworkLoading.swift in Sources */,
+				2B3E92142069F517005FAC61 /* JSON.swift in Sources */,
 				2B3E91822066952F005FAC61 /* CacheManager.swift in Sources */,
-				2B3E91EE20685215005FAC61 /* JSON.swift in Sources */,
-				2B3E91F320687221005FAC61 /* Data+Parse.swift in Sources */,
-				2B3E919420669C47005FAC61 /* String+Utility.swift in Sources */,
 				2B3E917B2066951A005FAC61 /* NetworkManager.swift in Sources */,
+				2B3E920E2069F517005FAC61 /* Data+Parse.swift in Sources */,
+				2B3E92172069F517005FAC61 /* UIImageView+NetworkLoading.swift in Sources */,
+				2B3E92082069F517005FAC61 /* UIColor+Utility.swift in Sources */,
 				2B3E918C20669AB0005FAC61 /* Parser.swift in Sources */,
-				2B3E919C206710F7005FAC61 /* UIImage+NetworkLoading.swift in Sources */,
+				2B3E92112069F517005FAC61 /* String+Utility.swift in Sources */,
 				D46661AA97160844A734E1858803F37E /* IncredibleNetworkManager-dummy.m in Sources */,
 				2B3E919020669BA9005FAC61 /* Requester.swift in Sources */,
-				2B3E9188206697DF005FAC61 /* UIImageView+NetworkLoading.swift in Sources */,
-				2B3E91B32067EDBA005FAC61 /* BaseService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

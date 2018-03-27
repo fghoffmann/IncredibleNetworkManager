@@ -10,13 +10,63 @@ import UIKit
 
 class ImageListViewModel: NSObject {
     var pictures: [PictureModel] = []
+    var canUpdateAgain = true
 
-    func getData(collectionView: UICollectionView) {
-        PictureService.getPictures(success: { pictures in
-            self.pictures = pictures
-            collectionView.reloadSections([0])
-        }) { (message) in
-            print(message ?? "")
+    func getData(viewController: UIViewController) {
+        if canUpdateAgain {
+            canUpdateAgain = false
+            if let viewController = viewController as? ImageListViewController {
+                let customLoading = CustomLoading(size: 32, color: .white)
+                viewController.loadingView.addSubview(customLoading)
+                customLoading.startAnimating()
+                viewController.loadingLabel.text = "Refreshing data..."
+                PictureService.getPictures(success: { pictures in
+                    customLoading.removeFromSuperview()
+                    viewController.loadingLabel.text = "Data loaded!"
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 1, execute: {
+                        UIView.animate(withDuration: 1, animations: {
+                            viewController.loadingLabel.text = pictures.count > 0 ? "" : "No more data available"
+                        }, completion: { _ in
+                            self.canUpdateAgain = true
+                        })
+                    })
+                    self.pictures = pictures
+                    viewController.collectionView.reloadSections([0])
+                }) { (message) in
+                    customLoading.removeFromSuperview()
+                    viewController.loadingLabel.text = message
+                    print(message ?? "")
+                }
+            }
+        }
+    }
+
+    func getMoreData(viewController: UIViewController) {
+        if canUpdateAgain {
+            canUpdateAgain = false
+            if let viewController = viewController as? ImageListViewController {
+                let customLoading = CustomLoading(size: 32, color: .white)
+                viewController.loadingView.addSubview(customLoading)
+                customLoading.startAnimating()
+                viewController.loadingLabel.text = "Loading more data..."
+                PictureService.getPictures(success: { pictures in
+                    customLoading.removeFromSuperview()
+                    viewController.loadingLabel.text = "Data loaded!"
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 1, execute: {
+                        UIView.animate(withDuration: 1, animations: {
+                            viewController.loadingLabel.text = pictures.count > 0 ? "" : "No more data available"
+                        }, completion: { _ in
+                            self.canUpdateAgain = true
+                        })
+                    })
+                    self.pictures.append(contentsOf: pictures)
+                    viewController.collectionView.reloadSections([0])
+                }) { (message) in
+                    customLoading.removeFromSuperview()
+                    viewController.loadingLabel.text = message
+                    print(message ?? "")
+                }
+            }
         }
     }
 }
@@ -34,28 +84,23 @@ extension ImageListViewModel {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "imageLoadedCell", for: indexPath) as! ImageLoadedCollectionViewCell
         cell.titleLabel.text = pictures[indexPath.item].user?.name ?? ""
         cell.dateLabel.text = pictures[indexPath.item].createdAt.toString(format: "MM-dd-yyyy hh:mm")
-        cell.dateLabel.text = "\(pictures[indexPath.item].likes) likes"
-        cell.updateParalaxOffset(collectionViewBounds: collectionView.bounds)
-        //_ = cell.imageView.setImage(pictures[indexPath.item].urls["thumb"]) { _ in }
+        cell.likesLabel.text = "\(pictures[indexPath.item].likes) likes"
         return cell
     }
 
     func willDisplay(_ collectionView: UICollectionView, cell: UICollectionViewCell, indexPath: IndexPath) {
         if let cell = cell as? ImageLoadedCollectionViewCell {
-            _ = cell.imageView.setImage(pictures[indexPath.item].urls["full"]) { _ in }
+            _ = cell.imageView.setImage(pictures[indexPath.item].urls["full"],
+                thumbnailUrl: pictures[indexPath.item].urls["thumb"], animated: false,
+                completion: { _ in
+                if cell.imageView.image == nil {
+                    cell.imageView.image = UIImage(named: "placeholder")
+                }
+            })
         }
     }
 
     func didSelect(_ collectionView: UICollectionView, viewController: UIViewController, indexPath: IndexPath) {
 
-    }
-
-    func scrollViewDidScroll(_ scrollView: UIScrollView, collectionView: UICollectionView) {
-        let cells = collectionView.visibleCells as! [ImageLoadedCollectionViewCell]
-        let bounds = collectionView.bounds
-        for cell in cells {
-            cell.updateParalaxOffset(collectionViewBounds: bounds)
-        }
-        
     }
 }
