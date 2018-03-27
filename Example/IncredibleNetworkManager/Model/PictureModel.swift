@@ -28,7 +28,7 @@ class PictureModel: BaseModel {
 
     required init(dictionary: JSON) {
         id = dictionary.parseString(key: "id")
-        createdAt = dictionary.parseDate(key: "created_at") ?? Date()
+        createdAt = dictionary.parseDate(key: "created_at", format: "yyyy-MM-dd'T'HH:mm:ss-04:00") ?? Date()
         width = dictionary.parseInt(key: "width")
         height = dictionary.parseInt(key: "height")
         color = dictionary.parseColor(key: "color")

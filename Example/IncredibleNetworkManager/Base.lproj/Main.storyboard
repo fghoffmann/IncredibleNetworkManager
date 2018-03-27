@@ -54,13 +54,21 @@
                                                             <rect key="frame" x="8" y="8" width="174" height="163"/>
                                                             <color key="backgroundColor" red="0.21544131636619568" green="0.39306163787841797" blue="0.55513697862625122" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </imageView>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gvf-Yj-Iq7">
+                                                            <rect key="frame" x="0.0" y="0.0" width="190" height="179"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </view>
                                                     </subviews>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
                                                         <constraint firstAttribute="bottom" secondItem="wFJ-ra-EYy" secondAttribute="bottom" constant="8" id="CUO-Lw-iqt"/>
                                                         <constraint firstItem="wFJ-ra-EYy" firstAttribute="leading" secondItem="RAk-Si-Yir" secondAttribute="leading" constant="8" id="Egk-WC-UwM"/>
+                                                        <constraint firstAttribute="bottom" secondItem="gvf-Yj-Iq7" secondAttribute="bottom" id="Xpk-Zt-f1L"/>
                                                         <constraint firstAttribute="trailing" secondItem="wFJ-ra-EYy" secondAttribute="trailing" constant="8" id="boM-wt-id3"/>
                                                         <constraint firstItem="wFJ-ra-EYy" firstAttribute="top" secondItem="RAk-Si-Yir" secondAttribute="top" constant="8" id="g75-PY-6IE"/>
+                                                        <constraint firstAttribute="trailing" secondItem="gvf-Yj-Iq7" secondAttribute="trailing" id="iV8-NZ-mJF"/>
+                                                        <constraint firstItem="gvf-Yj-Iq7" firstAttribute="leading" secondItem="RAk-Si-Yir" secondAttribute="leading" id="ojn-5P-Myc"/>
+                                                        <constraint firstItem="gvf-Yj-Iq7" firstAttribute="top" secondItem="RAk-Si-Yir" secondAttribute="top" id="wKc-cR-Az5"/>
                                                     </constraints>
                                                 </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oKX-xb-9zq">
@@ -99,6 +107,7 @@
                                             <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="oKX-xb-9zq" secondAttribute="trailing" constant="8" id="t75-hH-0zd"/>
                                         </constraints>
                                         <connections>
+                                            <outlet property="cellMaskView" destination="gvf-Yj-Iq7" id="ErE-3x-DUZ"/>
                                             <outlet property="dateLabel" destination="Tlh-9P-YFd" id="TDj-yG-0HZ"/>
                                             <outlet property="imageView" destination="wFJ-ra-EYy" id="rKT-T3-Arf"/>
                                             <outlet property="likesLabel" destination="ghN-z6-FpM" id="PbW-h5-li0"/>

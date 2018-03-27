@@ -13,6 +13,7 @@ class ImageLoadedCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var likesLabel: UILabel!
     @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var cellMaskView: UIView!
     @IBOutlet weak var imageViewCenterYLayoutContraint: NSLayoutConstraint!
 
     override func awakeFromNib() {
@@ -21,11 +22,13 @@ class ImageLoadedCollectionViewCell: UICollectionViewCell {
     }
 
     override func apply(_ layoutAttributes: UICollectionViewLayoutAttributes) {
+        
         super.apply(layoutAttributes)
-        mask?.alpha = 0.0
+        cellMaskView.alpha = 0.0
         self.layer.shouldRasterize = false
 
         self.layer.shouldRasterize = layoutAttributes.shouldRasterize
-        mask?.alpha = layoutAttributes.maskingValue
+        print("mask: \(layoutAttributes.maskingValue)")
+        cellMaskView.alpha = layoutAttributes.maskingValue
     }
 }

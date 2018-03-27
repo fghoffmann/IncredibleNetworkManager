@@ -31,7 +31,7 @@ extension UICollectionViewLayoutAttributes {
         }
     }
 
-    func copy(with zone: NSZone? = nil) -> Any {
+    override open func copy() -> Any {
         let attributes = super.copy() as! UICollectionViewLayoutAttributes
 
         attributes.shouldRasterize = self.shouldRasterize

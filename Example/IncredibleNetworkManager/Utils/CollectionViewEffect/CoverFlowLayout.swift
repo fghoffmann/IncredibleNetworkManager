@@ -160,11 +160,14 @@ class CoverFlowLayout: UICollectionViewFlowLayout {
             maskAlpha = INACTIVE_GREY_VALUE;
         }
 
+        if maskAlpha > 0.1 {
+            print("stop here")
+        }
         attributes.transform3D = transform;
 
         // Rasterize the cells for smoother edges.
         attributes.shouldRasterize = true
-        attributes.maskingValue = 0
+        attributes.maskingValue = maskAlpha
     }
 
     func indexPathIsCentered(_ indexPath: IndexPath) -> Bool {

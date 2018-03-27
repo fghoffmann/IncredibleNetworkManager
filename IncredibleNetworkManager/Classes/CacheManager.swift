@@ -14,7 +14,7 @@ class CacheManager: NSObject {
      *   @param memorySize: Size of cache in memory
      *   @param diskSize: Size of cache in disk
      */
-    open static func configureCache(withMemorySize memorySize: Int = 15, diskSize: Int = 200){
+    open static func configureCache(withMemorySize memorySize: Int = 15, diskSize: Int = 200) {
         let cacheSizeMemory = memorySize*1024*1024
         let cacheSizeDisk = diskSize*1024*1024
         let cache = URLCache(memoryCapacity: cacheSizeMemory, diskCapacity: cacheSizeDisk, diskPath: nil)
@@ -24,7 +24,7 @@ class CacheManager: NSObject {
     /*
      *   Clears cache
      */
-    open static func clearCache(){
+    open static func clearCache() {
         URLCache.shared.removeAllCachedResponses()
     }
 
@@ -32,7 +32,7 @@ class CacheManager: NSObject {
      *   Get cached object for urlRequest
      *   @param urlRequest: Request for cached data
      */
-    open static func getCachedObject(_ urlRequest: URLRequest) -> Data?{
+    open static func getCachedObject(_ urlRequest: URLRequest) -> Data? {
         if let cachedObject = URLCache.shared.cachedResponse(for: urlRequest) {
             return cachedObject.data
         }
