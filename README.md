@@ -59,7 +59,7 @@ imageView.setImage(<#T##url: String?##String?#>, thumbnailUrl: <#T##String?#>, p
 
 ## Author
 
-Fabio Gustavo Hoffmann, fghoffmann@hotmail.com
+Fabio Gustavo Hoffmann, fghoffmann@hotmail.com 
 
 ## License
 
