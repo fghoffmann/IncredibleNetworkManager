@@ -9,6 +9,7 @@
 import UIKit
 
 class ImageListViewController: UIViewController {
+    @IBOutlet weak var gradientView: GradientView!
     @IBOutlet weak var loadingView: UIView!
     @IBOutlet weak var loadingLabel: UILabel!
 
@@ -29,7 +30,6 @@ class ImageListViewController: UIViewController {
         self.collectionView.addGestureRecognizer(tapGestureRecognizer)
         self.collectionView.collectionViewLayout.invalidateLayout()
 
-        let gradientView = GradientView()
         gradientView.frame = self.view.frame
         gradientView.frame.origin.x = 0
         gradientView.frame.origin.y = 0

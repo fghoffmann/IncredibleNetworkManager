@@ -1,5 +1,5 @@
 PODS:
-  - IncredibleNetworkManager (0.1.0)
+  - IncredibleNetworkManager (0.1.1)
   - Nimble (7.0.3)
   - Quick (1.2.0)
 
@@ -13,7 +13,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  IncredibleNetworkManager: 9edf06792e4804f9bd443e4bae69a8de20aa41f7
+  IncredibleNetworkManager: 7be88f789e3fa82af609f7d75c1e913ebc54d2f1
   Nimble: 7f5a9c447a33002645a071bddafbfb24ea70e0ac
   Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
 

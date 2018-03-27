@@ -442,6 +442,7 @@
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = KBG9BD2F37;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -792,6 +793,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 68ED7E2341309F45176B57BE /* Pods-IncredibleNetworkManager_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = KBG9BD2F37;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -813,6 +815,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F1ED1A96512FE6856DEF78C5 /* Pods-IncredibleNetworkManager_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = KBG9BD2F37;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
