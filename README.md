@@ -67,5 +67,8 @@ IncredibleNetworkManager is available under the MIT license. See the LICENSE fil
 
 ## Versions
 
+### 0.1.2
+    Fixed load image completion
+
 ### 0.1.1
     Initial Version
