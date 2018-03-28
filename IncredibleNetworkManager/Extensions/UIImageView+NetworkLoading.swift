@@ -43,6 +43,7 @@ public extension UIImageView {
         self.alreadyLoadedOriginalImage = false
 
         guard let url = url else {
+            completion?(nil)
             return nil
         }
 
@@ -79,6 +80,7 @@ public extension UIImageView {
                 }
                 completion?(image)
             } else {
+                completion?(nil)
                 return
             }
         }

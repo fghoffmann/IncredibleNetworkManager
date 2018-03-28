@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'IncredibleNetworkManager'
-  s.version          = '0.1.1'
+  s.version          = '0.1.2'
   s.summary          = 'Awesome library to load JSON objects and parse them, also do download and caching images.'
   s.swift_version    = '3.2'
 

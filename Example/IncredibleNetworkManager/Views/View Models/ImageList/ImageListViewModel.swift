@@ -90,9 +90,14 @@ extension ImageListViewModel {
 
     func willDisplay(_ collectionView: UICollectionView, cell: UICollectionViewCell, indexPath: IndexPath) {
         if let cell = cell as? ImageLoadedCollectionViewCell {
+            let customLoading = CustomLoading(size: 26, color: .white)
+            customLoading.center = cell.imageView.center
+            cell.imageView.addSubview(customLoading)
+            customLoading.startAnimating()
             _ = cell.imageView.setImage(pictures[indexPath.item].urls["full"],
                 thumbnailUrl: pictures[indexPath.item].urls["thumb"], animated: false,
                 completion: { _ in
+                customLoading.removeFromSuperview()
                 if cell.imageView.image == nil {
                     cell.imageView.image = UIImage(named: "placeholder")
                 }
